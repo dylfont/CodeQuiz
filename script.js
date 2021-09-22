@@ -1,5 +1,6 @@
 var startSection = document.getElementById("startSection")
 var questionSection = document.getElementById("questionSection")
+var gameoverSection = document.getElementById("gameoverSection")
 var startBTN = document.getElementById("startBTN")
 var timer = document.getElementById("timer")
 var time = 60
@@ -22,6 +23,14 @@ var allQuestions=[
         answer3:"6",
         answer4:"7",
         correctAnswer:"7"
+    },
+    {
+        question:"guess the number again", 
+        answer1:"13",
+        answer2:"9",
+        answer3:"6",
+        answer4:"3",
+        correctAnswer:"3"
     }
 ]
 
@@ -80,6 +89,8 @@ function checkAnswer(event){
 
 function gameOver(){
     clearInterval(gameTimer)
+    gameoverSection.classList.remove("hide")
+    questionSection.classList.add("hide")
 }
 
 
