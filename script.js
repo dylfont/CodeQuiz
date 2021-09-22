@@ -2,6 +2,7 @@ var startSection = document.getElementById("startSection")
 var questionSection = document.getElementById("questionSection")
 var gameoverSection = document.getElementById("gameoverSection")
 var startBTN = document.getElementById("startBTN")
+var saveBTN = document.getElementById("saveBTN")
 var timer = document.getElementById("timer")
 var time = 60
 var gameTimer;
@@ -93,7 +94,16 @@ function gameOver(){
     questionSection.classList.add("hide")
 }
 
+function saveInitials(){
+    var initials = document.getElementById("initials").value
+    var score = initials + " " + time 
+    localStorage.setItem("high_score",score)
+    gameoverSection.classList.add("hide")
+    startSection.classList.remove("hide")
+    time = 60
+}
 
 
 
+saveBTN.addEventListener("click",saveInitials)
 startBTN.addEventListener("click",startGame)
