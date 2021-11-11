@@ -10,28 +10,44 @@ var index = 0
 
 var allQuestions=[
     {
-        question:"guess the number", 
-        answer1:"12",
-        answer2:"8",
-        answer3:"5",
-        answer4:"6",
-        correctAnswer:"8"
+        question:"Which operator is used to assign a value to a variable?", 
+        answer1:"=",
+        answer2:"*",
+        answer3:"x",
+        answer4:"#",
+        correctAnswer:"="
     },
     {
-        question:"guess the number again", 
-        answer1:"13",
-        answer2:"9",
-        answer3:"6",
-        answer4:"7",
-        correctAnswer:"7"
+        question:"Which event occurs when the user clicks on an HTML element?", 
+        answer1:"onchange",
+        answer2:"onmouseover",
+        answer3:"onmouseclick",
+        answer4:"onclick",
+        correctAnswer:"onclick"
     },
     {
-        question:"guess the number again", 
-        answer1:"13",
-        answer2:"9",
-        answer3:"6",
-        answer4:"3",
-        correctAnswer:"3"
+        question:"Inside which HTML element do we put the JavaScript?", 
+        answer1:"<javascript>",
+        answer2:"<scripting>",
+        answer3:"<script>",
+        answer4:"<js>",
+        correctAnswer:"<script>"
+    },
+    {
+        question:"How to write an IF statement in JavaScript?", 
+        answer1:"if i==5 then",
+        answer2:"if i=5 then",
+        answer3:"if i=5",
+        answer4:"if (i==5)",
+        correctAnswer:"if (i==5)"
+    },
+    {
+        question:"How does a FOR loop start?", 
+        answer1:"for (i<=5;i++)",
+        answer2:"for (i=0; i<=5)",
+        answer3:"for (i=0; i<=5; i++)",
+        answer4:"for i=1 to 5",
+        correctAnswer:"for (i=0; i<=5; i++)"
     }
 ]
 
